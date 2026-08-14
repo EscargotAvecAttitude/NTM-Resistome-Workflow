@@ -39,13 +39,13 @@ do
     # 4. Get sample names
     #
     # for example：
-    # rawdata/ASSEMBLY__ERR459914.fasta
+    # rawdata/ASSEMBLY__AAA0000.fasta
     #
     # after basename：
-    # ASSEMBLY__ERR459914.fasta
+    # ASSEMBLY__AAA0000.fasta
     #
     # after removing .fasta：
-    # ASSEMBLY__ERR459914
+    # ASSEMBLY__AAA0000
     # --------------------------------------------------------
 
     SAMPLE=$(basename "$GENOME" .fasta)
@@ -113,7 +113,5 @@ done
 # 9. all samples are analyzed
 # ------------------------------------------------------------
 
-echo "================================================="
 echo "All Phigaro jobs finished."
 echo "Finish time: $(date)"
-echo "================================================="
