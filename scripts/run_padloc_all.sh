@@ -25,9 +25,9 @@ for GENOME in "$INPUT_DIR"/*.fasta
 do
 
     # extract sample names from files name
-    # rawdata/ASSEMBLY__ERR459914.fasta
+    # rawdata/ASSEMBLY__AAA0000.fasta
     # ↓
-    # ASSEMBMBLY__ERR459914
+    # ASSEMBMBLY__AAA0000
     SAMPLE=$(basename "$GENOME" .fasta)
 
     echo "=============================================="
